@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* FUNDO 1 */
+.bg1{
+    position:fixed;
+    inset:0;
+    background:url("https://i.pinimg.com/originals/06/c0/f4/06c0f4bd28de1c373fe0619e826c8cab.gif") center/cover no-repeat;
+    filter:brightness(0.35);
+    z-index:-3;
+}
+
+/* FUNDO 2 */
+.bg2{
+    position:fixed;
+    inset:0;
+    background:url("https://i.pinimg.com/1200x/88/26/d0/8826d0bbb22cf6b7b2933b109fc64a68.jpg") center/cover no-repeat;
+    filter:brightness(0.35);
+    z-index:-2;
+    opacity:0;
+    transition:4s;
+}
+
+/* OVERLAY */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.3);
+    z-index:-1;
+}
+
+/* CARD */
+.card{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0.8);
+
+    width:420px;
+    height:160px;
+
+    background:rgba(10,10,15,0.85);
+    border:1px solid rgba(160,80,255,0.4);
+    border-radius:18px;
+
+    box-shadow:0 0 30px rgba(160,80,255,0.6);
+
+    display:flex;
+
+    opacity:0;
+    filter:blur(10px);
+
+    transition:4s ease;
+}
+
+/* MOSTRAR */
+.show{
+    opacity:1;
+    filter:blur(0px);
+    transform:translate(-50%, -50%) scale(1);
+}
+
+/* LEFT */
+.left{
+    width:35%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(120,60,255,0.15);
+}
+
+.left img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+/* RIGHT */
+.right{
+    flex:1;
+    padding:15px;
+    color:#d7b3ff;
+    font-family:monospace;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.title{
+    color:rgb(235, 190, 225);
+    margin-bottom:100px;
+}
+
+/* LETRA */
+#lyrics{
+    color:#ffb6d9;
+    font-size:0.9rem;
+    text-shadow:0 0 10px rgba(255,182,217,0.8);
+}
