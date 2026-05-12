@@ -1,6 +1,7 @@
 const bg2 = document.getElementById("bg2");
 const card = document.getElementById("card");
 const music = document.getElementById("music");
+music.play();
 const lyrics = document.getElementById("lyrics");
 
 const startTime = 35;
